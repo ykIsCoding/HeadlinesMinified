@@ -1,0 +1,1 @@
+<h1 class="font-display text-5xl font-bold">Headlines Minified</h1>

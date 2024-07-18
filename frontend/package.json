@@ -30,6 +30,8 @@
 		"@svelteuidev/motion": "^0.15.7",
 		"@svelteuidev/preprocessors": "^0.15.7",
 		"@svelteuidev/prism": "^0.15.7",
-		"dayjs": "^1.11.11"
+		"axios": "^1.7.2",
+		"dayjs": "^1.11.11",
+		"dotenv": "^16.4.5"
 	}
 }
