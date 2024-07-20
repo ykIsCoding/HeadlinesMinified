@@ -18,7 +18,7 @@
         goto(`/article/${id}`)
       }
   </script>
-    <div on:click={handleClick} class="col-span-3 bg-beige-5 mt-0.5 mb-0.5 mr-0.5">
+    <div on:click={handleClick} class="col-span-3 bg-beige-5 mt-0.5 mb-0.5 mr-0.5"></div>
     <div class="col-span-1 aspect-[5/6] p-5">
     <h5 class="mb-2 text-3xl font-bold tracking-tight">{title}</h5>
       {#key i}
