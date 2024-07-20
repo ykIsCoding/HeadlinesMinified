@@ -1,3 +1,7 @@
+<script>
+  import ThemeSwitch from "./ThemeSwitch.svelte";
+
+</script>
 <header>
     <!-- Navigation bar -->
     <nav
@@ -5,7 +9,7 @@
       data-twe-navbar-ref>
       <!-- Navigation links -->
         <div class="flex flex-row justify-end">
-          <span>Dark Mode</span>
+          <ThemeSwitch />
           </div>
     </nav>
   
