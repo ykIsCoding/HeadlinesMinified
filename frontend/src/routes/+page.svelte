@@ -1,5 +1,6 @@
 <script>
   import Heading from "../components/heading.svelte";
+  import PrimaryGrid from "../components/primaryGrid.svelte";
   import SecondaryGrid from "../components/secondaryGrid.svelte";
   import GridCard from "../components/gridCard.svelte";
 
@@ -16,12 +17,16 @@
 		news = await response.json();
 	}
 
-  let children = GridCard
+  
 </script>
 
 {news}
 <div class="p-10 w-full">
 <Heading/>
 </div>
-<SecondaryGrid {children}>
+<PrimaryGrid></PrimaryGrid>
+<div class="h-20">
+
+</div>
+<SecondaryGrid>
 </SecondaryGrid>

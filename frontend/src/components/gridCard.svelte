@@ -1,7 +1,21 @@
+<script>
+  import { onMount } from "svelte";
+  import { typingTransition } from "../transitions/typingTransition";
 
-<a href="#" class="block bg-beige-1 aspect-square p-5 m-0.5">
+    export let title="loading title..."
+    export let description = "loading description..."
+    export let id
 
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-    <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+    let i =-1
+    onMount(()=>{
+        i += 1;
+        i %= description.length;
+    })
+</script>
+<a href="#" class="block bg-beige-1 aspect-[5/6] p-5 m-0.5 flex flex-col text-brown-1 justify-between hover:bg-beige-4 hover:text-beige-1 ease-in duration-500">
+    <h5 class="mb-2 text-3xl font-bold tracking-tight">{title}</h5>
+    {#key i}
+    <p in:typingTransition={{ speed: 5 }} class="font-normal w-5/6">{description.slice(0,100) || ''}</p>
+    {/key}
     </a>
     

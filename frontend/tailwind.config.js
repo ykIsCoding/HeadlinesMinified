@@ -14,6 +14,7 @@ export default {
         'beige-3': '#D7BE8A',
         'beige-4': '#C9A865',
         'beige-5': '#B99142',
+        'brown-1':'#503500'
       },
     },
   },
