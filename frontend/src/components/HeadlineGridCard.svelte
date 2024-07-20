@@ -20,8 +20,8 @@
   </script>
     <div on:click={handleClick} class="col-span-3 bg-beige-5 mt-0.5 mb-0.5 mr-0.5"></div>
     <div class="col-span-1 aspect-[5/6] p-5">
-    <h5 class="mb-2 text-3xl font-bold tracking-tight">{title}</h5>
+    <h5 class="mb-2 text-3xl font-bold font-display  tracking-wider">{title}</h5>
       {#key i}
-      <p in:typingTransition={{ speed: 5 }} class="font-normal w-5/6">{description.slice(0,100) || ''}</p>
+      <p in:typingTransition={{ speed: 5 }} class="font-body w-5/6">{description.slice(0,100) || ''}</p>
       {/key}
     </div>

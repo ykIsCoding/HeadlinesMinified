@@ -13,6 +13,6 @@
   </script>
 
 
-<div class="h-full grid grid-cols-4 gap-0 bg-beige-3 pt-0.5 pb-0.5">
+<div class="h-full duration-500 grid grid-cols-4 gap-0 bg-beige-3 pt-0.5 pb-0.5 dark:bg-gray-500">
     <HeadlineGridCard {...news[0]}/>
   </div>

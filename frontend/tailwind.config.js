@@ -6,8 +6,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'display': ['Libre Caslon Text'],
-        'body': ['Lucida Sans'],
+        'display': ['"Special Elite"'],
+        'body': ['"Work Sans"'],
       },
       colors: {
         'beige-1': '#F2E8D5',
