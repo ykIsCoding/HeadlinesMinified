@@ -21,12 +21,13 @@
 </script>
 
 {news}
-<div class="p-10 w-full">
-<Heading/>
-</div>
+<div class="w-full p-2 sm:p-10">
+	<div class="sm:p-5 m-2 sm:ml-12 sm:mr-12">
 <PrimaryGrid></PrimaryGrid>
 <div class="h-20">
 
 </div>
 <SecondaryGrid>
 </SecondaryGrid>
+	</div>
+</div>

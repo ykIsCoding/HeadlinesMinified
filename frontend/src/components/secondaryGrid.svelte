@@ -47,7 +47,7 @@
   </script>
 
 
-<div class="h-full grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-0 bg-beige-3 pt-0.5 pb-0.5 dark:bg-gray-500 duration-500">
+<div class="h-full gap-10 grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 pt-0.5 pb-0.5 dark:bg-gray-500 duration-500">
     {#each news as article (article.id)}
       <GridCard {...article}/>
     {/each}

@@ -1,5 +1,6 @@
 <script>
     import GridCard from './gridCard.svelte'
+  import Heading from './heading.svelte';
   import HeadlineGridCard from './HeadlineGridCard.svelte';
     export let children
 
@@ -13,6 +14,11 @@
   </script>
 
 
-<div class="h-full duration-500 grid grid-cols-4 gap-0 bg-beige-3 pt-0.5 pb-0.5 dark:bg-gray-500">
-    <HeadlineGridCard {...news[0]}/>
+<div class="h-full duration-500 gap-10 grid grid-cols-3 gap-0 pt-0.5 pb-0.5 dark:bg-gray-500">
+  <div class="col-span-3 lg:col-span-1">
+    <Heading/>
+  </div>
+  <div class="col-span-3 lg:col-span-2">
+    <div class="bg-black aspect-[6/4] h-full w-full"></div>
+  </div>
   </div>
