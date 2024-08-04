@@ -1,17 +1,19 @@
 <script>
+  import { onMount } from 'svelte';
     import GridCard from './gridCard.svelte'
   import Heading from './heading.svelte';
   import HeadlineGridCard from './HeadlineGridCard.svelte';
   import Paragraphtext from './paragraphtext.svelte';
-    export let children
-
-    const news = [
-      {
-        id:1,
-        title:'title',
-        description:'descriptions'
-      }
-    ]
+    
+    export let news
+    let imageurl = ''
+    let headlineTitle = ''
+    onMount(()=>{
+      const {urlToImage,title} = news
+      imageurl = urlToImage
+      headlineTitle= title
+      console.log(news)
+    })
   </script>
 
 
@@ -23,6 +25,12 @@
     </div>
   </div>
   <div class="col-span-3 lg:col-span-2">
-    <div class="bg-black aspect-[6/4] h-full w-full"></div>
-  </div>
+    {#if imageurl!=''}
+      <img src={''} class="object-cover aspect-[6/4] w-full h-full"/>
+      {:else}
+      <div class="object-cover bg-beige-2 aspect-[6/4] w-full h-full">
+        <h5 class=" text-md xl:text-2xl font-bold font-body tracking-wider">{headlineTitle}</h5>
+      </div>
+    {/if}
+    </div>
   </div>

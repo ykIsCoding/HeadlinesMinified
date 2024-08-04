@@ -45,7 +45,7 @@ function getNews() {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 2, , 3]);
-                    url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + process.env.NEWS_API_KEY;
+                    url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=" + '';
                     return [4 /*yield*/, axios_1["default"]({
                             method: 'get',
                             url: url,

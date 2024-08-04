@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export default async function getNews(){
   try{
-    const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEWS_API_KEY}`
+    const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${''}`
     let results = await axios({
         method: 'get',
         url: url,
