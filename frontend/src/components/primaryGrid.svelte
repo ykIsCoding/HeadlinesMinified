@@ -5,15 +5,8 @@
   import HeadlineGridCard from './HeadlineGridCard.svelte';
   import Paragraphtext from './paragraphtext.svelte';
     
-    export let news
-    let imageurl = ''
-    let headlineTitle = ''
-    onMount(()=>{
-      const {urlToImage,title} = news
-      imageurl = urlToImage
-      headlineTitle= title
-      console.log(news)
-    })
+    export let imageurl
+    export let headlineTitle
   </script>
 
 
@@ -26,7 +19,7 @@
   </div>
   <div class="col-span-3 lg:col-span-2">
     {#if imageurl!=''}
-      <img src={''} class="object-cover aspect-[6/4] w-full h-full"/>
+      <img src={imageurl} class="object-cover aspect-[6/4] w-full h-full"/>
       {:else}
       <div class="object-cover bg-beige-2 aspect-[6/4] w-full h-full">
         <h5 class=" text-md xl:text-2xl font-bold font-body tracking-wider">{headlineTitle}</h5>
