@@ -1,1 +1,0 @@
-<h1 class="font-display text-brown-1 dark:text-beige-2  tracking-wider text-4xl  md:text-6xl font-bold">Headlines Minified</h1>

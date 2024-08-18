@@ -1,15 +1,14 @@
 <script>
-import Button from "../../../components/button.svelte";
-  import WideImage from "../../../components/WideImage.svelte";
+
 
 </script>
 <div class="p-0 w-full h-full flex flex-col max-w-screen">
     <div class="flex flex-row w-full justify-start">
-        <Button label="Back to Home"/>
+        
     </div>
     <div class=" w-full h-full flex flex-col">
     <h1 class="m-5 md:m-10 text-4xl md:text-6xl">Article</h1>
-    <WideImage/>
+    
     <div class="flex flex-col gap-10 p-5 md:p-10 w-full md:w-3/4 m-0 text-justify text-lg">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien sit amet lectus tempor ultricies accumsan eget velit. Donec fermentum felis ullamcorper purus lobortis tristique eu sit amet velit. Fusce nec turpis eu odio laoreet lacinia. Nam varius purus ut aliquam fringilla. Vivamus auctor arcu pellentesque arcu volutpat facilisis in at odio. Nullam ut volutpat lorem, quis feugiat eros. Sed venenatis mollis tellus a luctus.
 
